@@ -10,14 +10,10 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
-echo "---- kopia plikow"
+echo "---- kopiowanie plikow html"
 cp -Rfv /tmp/src/*.html ./
-
-echo "---- dodanie pliku info.html"
-DATE=$(date +%F)
-echo $DATE costam costam costam >> ./info.html
-
-
+echo "---- tworzenie pliku info.html"
+echo $(date +%F) jakis tam sobie teskt > ./info.html
 
 
 
